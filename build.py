@@ -5,7 +5,9 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers_firstparty.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/foreign.txt",
-    "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt"
+    "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
+    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt"
 ]
 
 EXCLUSIONS = "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt"
