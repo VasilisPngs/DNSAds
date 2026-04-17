@@ -18,13 +18,26 @@ def fetch_data(url):
 
 def extract_domain(line):
     line = line.strip()
-    if not line or line.startswith('!') or line.startswith('#'):
+    
+    if not line or line.startswith('!') or line.startswith('#') or '##' in line or '#?#' in line:
         return None
-    line = re.sub(r'\$.*', '', line)
-    line = re.sub(r'\^.*', '', line)
-    line = line.replace('||', '').replace('|', '')
-    if '/' in line or '*' in line or '=' in line:
+        
+    if line.startswith('||'):
+        line = line[2:]
+    elif line.startswith('|'):
         return None
+        
+    line = line.split('$')[0]
+    line = line.strip('^')
+    
+    if '/' in line or '*' in line or ':' in line or '=' in line or '?' in line:
+        return None
+        
+    if '.' not in line or ' ' in line:
+        return None
+        
+    line = line.lstrip('.')
+        
     return line
 
 domains = set()
