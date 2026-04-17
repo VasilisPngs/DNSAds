@@ -105,4 +105,4 @@ final_list = sorted(list(final_compressed))
 
 with open("blocklist.txt", "w") as f:
     for d in final_list:
-        f.write(f"{d}\n")
+        f.write(f"||{d}^\n")
