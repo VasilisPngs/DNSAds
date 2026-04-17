@@ -51,4 +51,4 @@ final_list = sorted(list(domains - whitelist))
 
 with open("blocklist.txt", "w") as f:
     for d in final_list:
-        f.write(d + "\n")
+        f.write(f"||{d}^\n")
