@@ -6,8 +6,7 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers_firstparty.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/foreign.txt",
     "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
-    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
-    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt"
+    "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt"
 ]
 
 EXCLUSIONS = "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt"
@@ -21,7 +20,7 @@ def fetch_data(url):
 def extract_domain(line):
     line = line.strip()
     
-    if not line or line.startswith('!') or line.startswith('#') or '##' in line or '#?#' in line:
+    if not line or line.startswith('!') or line.startswith('#') or '##' in line or '#?#' in line or line.startswith('@@'):
         return None
         
     if line.startswith('||'):
