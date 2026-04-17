@@ -7,7 +7,8 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
     "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
-    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt"
+    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt",
+    "https://www.void.gr/kargig/void-gr-filters.txt"
 ]
 
 EXCLUSIONS = [
@@ -63,6 +64,21 @@ def extract_whitelist_domain(line):
         return None
     return line.lstrip('.')
 
+def compress_domains(domains_set):
+    sorted_domains = sorted(list(domains_set), key=len)
+    compressed = set()
+    for d in sorted_domains:
+        parts = d.split('.')
+        is_subdomain = False
+        for i in range(1, len(parts)):
+            parent = '.'.join(parts[i:])
+            if parent in compressed:
+                is_subdomain = True
+                break
+        if not is_subdomain:
+            compressed.add(d)
+    return compressed
+
 domains = set()
 for url in SOURCES:
     try:
@@ -83,8 +99,10 @@ for url in EXCLUSIONS:
     except:
         pass
 
-final_list = sorted(list(domains - whitelist))
+raw_list = domains - whitelist
+final_compressed = compress_domains(raw_list)
+final_list = sorted(list(final_compressed))
 
 with open("blocklist.txt", "w") as f:
     for d in final_list:
-        f.write(f"||{d}^\n")
+        f.write(f"{d}\n")
