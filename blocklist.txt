@@ -417,6 +417,7 @@
 ||affiliates.vpn.ht^
 ||affliate-api.hindustantimes.com^
 ||affsnetwork.com^
+||afminer.com^
 ||afppcvyfyjs.com^
 ||afrdtech.com^
 ||afs.googlesyndication.com^
@@ -596,6 +597,7 @@
 ||aznude.workers.dev^
 ||azvision.az^
 ||b0f1d2.com^
+||bablace.com^
 ||baggyrepackingrocky.com^
 ||ban.bhol.co.il^
 ||bangready.com^
@@ -693,6 +695,7 @@
 ||blueseed.tv^
 ||bluffyporn.com^
 ||bms1.adjarabet.com^
+||bmwebm.org^
 ||bn.gogo.mn^
 ||bojegoju.top^
 ||bonnieradnetwork.se^
@@ -708,6 +711,7 @@
 ||brightadnetwork.com^
 ||broadlyjukeboxunrevised.com^
 ||brokerbabe.com^
+||brominer.com^
 ||brunettemattersrefused.com^
 ||bstgms4y.com^
 ||bstream.channelcom.tech^
@@ -751,6 +755,7 @@
 ||camsbanner.wtfgroup.co^
 ||caprofitx.com^
 ||carbonads.net^
+||cashbeet.com^
 ||cashpartners.eu^
 ||cashprom.ru^
 ||casino-ad-mediation.me2zengame.com^
@@ -864,8 +869,14 @@
 ||cnzz.com^
 ||code.ainsyndication.com^
 ||code.poptm.com^
+||coin-have.com^
 ||coinad.org^
+||coinerra.com^
 ||coinhits.com^
+||coinimp.com^
+||coinnebula.com^
+||coinpirate.cf^
+||coinpot.co^
 ||coinzillatag.com^
 ||collection.theaa.com^
 ||collector-cdn.github.com^
@@ -954,6 +965,7 @@
 ||crosspromotion.weplayer.cc^
 ||crouteintendersinbringer.monster^
 ||crxcra.com^
+||crypto-loot.com^
 ||cryptoadvertising.net^
 ||cs.rivierewhimsey.com^
 ||cs02-pps-drcn.dbankcdn.com^
@@ -1154,6 +1166,7 @@
 ||dobreprogramy.pl^
 ||dollphoin.site^
 ||donasi.lk21.de^
+||dontbeevils.de^
 ||doo6pwib3qngu.cloudfront.net^
 ||doorknockset.com^
 ||dotomi.com^
@@ -1267,6 +1280,8 @@
 ||focas.jp^
 ||foisonad.com^
 ||fotoblogia.pl^
+||freecontent.date^
+||freecontent.stream^
 ||freewheel-jitt.sanoma.fi^
 ||freewheel-mtgx-tv.akamaized.net^
 ||friendlyduck.com^
@@ -1366,14 +1381,17 @@
 ||gsecurecontent.com^
 ||gts-ads.twistbox.com^
 ||guandads.com^
+||gulf.moneroocean.stream^
 ||gumgum.com^
 ||gusoclji.com^
 ||gwrtdp-tn690BFAdt.tclclouds.com^
 ||gynax.com^
+||gyrovague.com^
 ||h5.isnssdk.com^
 ||ha-api.pushwoosh.com^
 ||hairsromance.com^
 ||hakurei.cdnbo.org^
+||hashing.win^
 ||hb.headbidder.net^
 ||hbx.media.net^
 ||head-clickfusion.com^
@@ -1383,6 +1401,7 @@
 ||hechaocheng.cn^
 ||hellay.net^
 ||helpful-web.com^
+||hemnes.win^
 ||hesads.akamaized.net^
 ||hetcash.com^
 ||heukmsactivator.com^
@@ -1446,6 +1465,7 @@
 ||idreamed.com^
 ||iframe.porndudegirls.com^
 ||igniterads.com^
+||igrid.org^
 ||ih1.fileforums.com^
 ||iiageq.com^
 ||im.ov.yahoo.co.jp^
@@ -1505,6 +1525,8 @@
 ||js.trendmd.com^
 ||jsc.mgid.com^
 ||jscdn.yieldbird.com^
+||jscdndel.com^
+||jsecoin.com^
 ||jsfilecdn.com^
 ||jsonads.upnerd.net^
 ||jumpfiledoor.click^
@@ -1647,6 +1669,7 @@
 ||meendocash.com^
 ||melredirnxt.top^
 ||member.javtvnow.xyz^
+||mepirtedic.com^
 ||metamx.com^
 ||meter-svc.nytimes.com^
 ||metric-agent.i10c.net^
@@ -1668,6 +1691,8 @@
 ||midnightlotusgrove.com^
 ||milk.supertool.stunnermedia.com^
 ||mimicromax.com^
+||mine.torrent.pw^
+||minemytraffic.com^
 ||mintegral.com^
 ||minutelight-1.online^
 ||mixadvert.com^
@@ -1716,6 +1741,7 @@
 ||mobuppsrtb.com^
 ||mofox.com^
 ||moguldom.com^
+||monerominer.rocks^
 ||monetiza.co^
 ||money.pl^
 ||moneyoyo.com^
@@ -1808,12 +1834,14 @@
 ||odds.vebo.xyz^
 ||ofbtrorzo.in^
 ||offclaydolon.com^
+||offerreality.com^
 ||offerwall-adnative.com^
 ||offerwall.yandex.net^
 ||officialkmspico.com^
 ||ogads-pa.clients6.google.com^
 ||ojfotraqjg.in^
 ||okloib88.com^
+||omine.org^
 ||onaudience.com^
 ||onclicktop.com^
 ||one-new-message.com^
@@ -1858,15 +1886,18 @@
 ||pahtuo.tech^
 ||pahtuz.tech^
 ||painsko.com^
+||pampopholf.com^
 ||pangle.io^
 ||pangolin16.isnssdk.com^
 ||pangolin16.sgsnssdk.com^
+||papoto.com^
 ||parcelconsists.com^
 ||parenting.pl^
 ||paripartner.com^
 ||parrot-flow.com^
 ||partnerearning.com^
 ||partnerzyapi.ceneo.pl^
+||party-vqgdyvoycc.now.sh^
 ||pasfox.co^
 ||pasta.esfile.duapps.com^
 ||patakaendymal.top^
@@ -1877,6 +1908,7 @@
 ||pcformat.pl^
 ||perf-events.cloud.unity3d.com^
 ||performoo.com^
+||pertholin.com^
 ||pflexads.com^
 ||pgdt.gtimg.cn^
 ||pglstatp-toutiao.com^
@@ -1940,6 +1972,7 @@
 ||polygamia.pl^
 ||polymorphicads.jp^
 ||pontiflex.com^
+||pool.supportxmr.com^
 ||pop.verplusonline.com^
 ||popcashjs.b-cdn.net^
 ||popcent.net^
@@ -1958,11 +1991,13 @@
 ||powerlinks.com^
 ||ppcent.org^
 ||ppcnt.org^
+||ppoi.org^
 ||pr.comet.yahoo.com^
 ||preanalytication.com^
 ||prebid-server.newsbreak.com^
 ||prebid.scope3.com^
 ||predictivadnetwork.com^
+||premiumstats.xyz^
 ||preroll.hostave3.net^
 ||presage.io^
 ||pressizer.net^
@@ -2051,6 +2086,7 @@
 ||ritzumafma.com^
 ||rixengine.com^
 ||robin-flow.com^
+||rocks.io^
 ||roewnand.biz^
 ||rolpenszimocca.com^
 ||rossoad.com^
@@ -2131,6 +2167,7 @@
 ||see-what-is-trending.com^
 ||selectmedia.asia^
 ||semygruja.com^
+||serie-vostfr.com^
 ||sersh.com^
 ||serve.ads.gr^
 ||serve.williamhill.com^
@@ -2150,6 +2187,7 @@
 ||sheets.googleapis.com^
 ||sheilaqeb.com^
 ||sibergy.com^
+||silimbompom.com^
 ||silvermob.com^
 ||sitemaji.com^
 ||sitescout.com^
@@ -2166,6 +2204,7 @@
 ||smartadserver.com^
 ||smartcastaddon.com^
 ||smartmnews.pro^
+||smartoffer.site^
 ||smartytouch.co^
 ||smilered.com^
 ||smpop.icfcdn.com^
@@ -2324,6 +2363,7 @@
 ||stat.ruvr.ru^
 ||stat.torrentbar.com^
 ||stat.xhamsterpremium.com^
+||statdynamic.com^
 ||static.adconnect.vn^
 ||static.chilli.ee^
 ||static.hyprmx.com^
@@ -2455,6 +2495,7 @@
 ||tds.favbet.partners^
 ||teachscape.vo.llnwd.net^
 ||techaddom8132.com^
+||tercabilis.info^
 ||th.giraff.io^
 ||thebestoffersintheweb.com^
 ||thecalokas.com^
@@ -2586,6 +2627,7 @@
 ||tradplusad.com^
 ||traffic.cam4pays.com^
 ||traffic.styria.hr^
+||traffic.tc-clicks.com^
 ||traffichunt.com^
 ||trafmag.com^
 ||traktum.com^
@@ -2599,6 +2641,7 @@
 ||tt.onthe.io^
 ||tubecontext.com^
 ||tubemogul.com^
+||tulip18.com^
 ||turn.com^
 ||turnipsoft.pubfinity.com^
 ||turnstilesocially.com^
@@ -2659,6 +2702,7 @@
 ||viidedss.com^
 ||vipads.live^
 ||viralltopics.com^
+||vkcdnservice.com^
 ||vlcdownloads.com^
 ||vliplatform.com^
 ||vm5apis.com^
@@ -2674,6 +2718,7 @@
 ||vtrk.dv.tech^
 ||vukhhjzd.com^
 ||vungle.com^
+||vuryua.ru^
 ||vuukle.net^
 ||vvbox.cz^
 ||vxcholycr.com^
@@ -2688,6 +2733,8 @@
 ||webads.eu^
 ||webinstats.com^
 ||webmedxml.com^
+||webmine.cz^
+||webminepool.com^
 ||webtradingspot.com^
 ||weline.info^
 ||wenoolgo.icu^
@@ -2713,6 +2760,7 @@
 ||worshippers.store^
 ||wp.pl^
 ||wrmcfyzl.com^
+||wtm.monitoringservice.co^
 ||wtraff.com^
 ||www.adbert.com.tw^
 ||x3m.biz^
@@ -2727,6 +2775,7 @@
 ||xmlfusion.com^
 ||xmlppc.net^
 ||xmorex.com^
+||xmrminingproxy.com^
 ||xrtb.io^
 ||xxxc2c.org^
 ||y.crazyporn.xxx^
