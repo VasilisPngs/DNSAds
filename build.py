@@ -14,12 +14,6 @@ EXCLUSIONS = [
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt"
 ]
 
-BROAD_DOMAIN_SAFELIST = {
-    "amazonaws.com", "googleapis.com", "cloudfront.net", "akamaized.net",
-    "fastly.net", "gstatic.com", "github.com", "github.io",
-    "cloudflare.com", "azureedge.net"
-}
-
 def fetch_data(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req) as response:
@@ -41,8 +35,7 @@ def extract_domain(line):
     if '.' not in line:
         return None
     line = line.lstrip('.')
-    parts = line.split('.')
-    if all(part.isdigit() for part in parts):
+    if all(p.isdigit() for p in line.split('.')):
         return None
     return line
 
@@ -71,25 +64,15 @@ def extract_whitelist_domain(line):
 def is_whitelisted(domain, whitelist_set):
     parts = domain.split('.')
     for i in range(len(parts)):
-        parent = '.'.join(parts[i:])
-        if parent in whitelist_set:
+        if '.'.join(parts[i:]) in whitelist_set:
             return True
     return False
 
 def compress_domains(domains_set):
-    sorted_domains = sorted(list(domains_set), key=len)
     compressed = set()
-    for d in sorted_domains:
-        if d in BROAD_DOMAIN_SAFELIST:
-            continue
+    for d in sorted(domains_set, key=len):
         parts = d.split('.')
-        is_subdomain = False
-        for i in range(1, len(parts)):
-            parent = '.'.join(parts[i:])
-            if parent in compressed and parent not in BROAD_DOMAIN_SAFELIST:
-                is_subdomain = True
-                break
-        if not is_subdomain:
+        if not any('.'.join(parts[i:]) in compressed for i in range(1, len(parts))):
             compressed.add(d)
     return compressed
 
@@ -113,9 +96,7 @@ for url in EXCLUSIONS:
     except:
         pass
 
-raw_list = {d for d in domains if not is_whitelisted(d, whitelist)}
-final_list = sorted(list(compress_domains(raw_list)))
+final_list = sorted(compress_domains({d for d in domains if not is_whitelisted(d, whitelist)}))
 
 with open("blocklist.txt", "w") as f:
-    for d in final_list:
-        f.write(f"||{d}^\n")
+    f.write('\n'.join(f"||{d}^" for d in final_list) + '\n')
