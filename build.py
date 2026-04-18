@@ -24,7 +24,7 @@ def fetch_data(url):
 
 def extract_domain(line):
     line = line.strip()
-    if not line or line.startswith(('!', '#', '@@')) or '#' in line or not line.startswith('||'):
+    if not line or '#' in line or not line.startswith('||'):
         return None
     line = line[2:].split('$')[0].strip('^')
     if not INVALID_CHARS.isdisjoint(line) or '.' not in line:
