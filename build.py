@@ -6,9 +6,6 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/foreign.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/cryptominers.txt",
     "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
-    "https://adguardteam.github.io/AdguardFilters/SpywareFilter/sections/tracking_servers.txt",
-    "https://adguardteam.github.io/AdguardFilters/SpywareFilter/sections/tracking_servers_firstparty.txt",
-    "https://adguardteam.github.io/AdguardFilters/SpywareFilter/sections/mobile.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
     "https://www.void.gr/kargig/void-gr-filters.txt"
 ]
