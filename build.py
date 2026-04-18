@@ -6,6 +6,8 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/foreign.txt",
     "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
+    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+    "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt",
     "https://www.void.gr/kargig/void-gr-filters.txt"
 ]
 
@@ -13,6 +15,12 @@ EXCLUSIONS = [
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt"
 ]
+
+BROAD_DOMAIN_SAFELIST = {
+    "amazonaws.com", "googleapis.com", "cloudfront.net", "akamaized.net",
+    "fastly.net", "gstatic.com", "github.com", "github.io",
+    "cloudflare.com", "azureedge.net"
+}
 
 def fetch_data(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -62,15 +70,25 @@ def extract_whitelist_domain(line):
         return None
     return line.lstrip('.')
 
+def is_whitelisted(domain, whitelist_set):
+    parts = domain.split('.')
+    for i in range(len(parts)):
+        parent = '.'.join(parts[i:])
+        if parent in whitelist_set:
+            return True
+    return False
+
 def compress_domains(domains_set):
     sorted_domains = sorted(list(domains_set), key=len)
     compressed = set()
     for d in sorted_domains:
+        if d in BROAD_DOMAIN_SAFELIST:
+            continue
         parts = d.split('.')
         is_subdomain = False
         for i in range(1, len(parts)):
             parent = '.'.join(parts[i:])
-            if parent in compressed:
+            if parent in compressed and parent not in BROAD_DOMAIN_SAFELIST:
                 is_subdomain = True
                 break
         if not is_subdomain:
@@ -97,9 +115,8 @@ for url in EXCLUSIONS:
     except:
         pass
 
-raw_list = domains - whitelist
-final_compressed = compress_domains(raw_list)
-final_list = sorted(list(final_compressed))
+raw_list = {d for d in domains if not is_whitelisted(d, whitelist)}
+final_list = sorted(list(compress_domains(raw_list)))
 
 with open("blocklist.txt", "w") as f:
     for d in final_list:
