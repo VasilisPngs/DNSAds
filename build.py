@@ -4,6 +4,7 @@ SOURCES = [
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers_firstparty.txt",
     "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/foreign.txt",
+    "https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/cryptominers.txt",
     "https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
     "https://www.void.gr/kargig/void-gr-filters.txt"
